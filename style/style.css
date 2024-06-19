@@ -133,6 +133,7 @@ main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
   font-size: 25px;
   margin: 10px 0 20px 0;
 }
+main .section3 .sct3-container button,
 main .section1 .sct1-container .sct1-text button {
   padding: 15px 20px;
   background-color: #cc9d2f;
@@ -142,6 +143,7 @@ main .section1 .sct1-container .sct1-text button {
   border: none;
   box-shadow: #5b0017 -4px 4px 0 0, #cc9d2f -4px 4px 0 1px;
 }
+main .section3 .sct3-container button a,
 main .section1 .sct1-container .sct1-text button a {
   text-decoration: none;
   color: #5b0017;
@@ -211,6 +213,89 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   font-size: 12px;
 }
 /*------------------FIN-SECTION2-------------------------------------------------*/
+main .section3 {
+  height: 120vh;
+  background-image: url(/images/section3-illustration.png);
+  background-size: 100% 100%;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section3 .sct3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .section3 img:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 70%;
+}
+main .section3 img:nth-of-type(1) {
+  width: 88px;
+  height: 104px;
+}
+main .section3 p {
+  font-size: 60px;
+  color: white;
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+main .section3 .sct3-container button {
+  padding: 15px 25px;
+}
+/*--------------------------FIN-SECTION3-----------------------------------*/
+footer {
+  background-color: #cc9d2f;
+  font-family: "Inter", sans-serif;
+}
+footer .footer-box1 {
+  padding: 3% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}
+footer .footer-box1 .footer-links {
+  display: flex;
+  gap: 30px;
+}
+footer .footer-box1 .footer-links a {
+  text-decoration: none;
+  color: #5b0017;
+  font-size: 18px;
+}
+footer .footer-box2 {
+  padding: 1% 5%;
+  display: flex;
+  gap: 30%;
+  color: #243054;
+}
+footer hr {
+  border: none;
+  border-bottom: solid 0.8px #24305425;
+}
+footer .footer-box2 .social-links {
+  display: flex;
+  gap: 20px;
+}
+footer .footer-box2 .social-links i {
+  cursor: pointer;
+}
+footer .footer-box2 .social-links i:hover {
+  opacity: 0.8;
+  transform: 0.3s;
+}
+/*----------------------------------FIN-FOOTER*--------------------------------*/
 @media (max-width: 1290px) {
   header {
     background-size: 45% 700px;
@@ -254,6 +339,9 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   }
   main .section2 .sct2-container .sct2-text #description {
     font-size: 18px;
+  }
+  footer .footer-box2 {
+    gap: 25%;
   }
 }
 @media (max-width: 1245px) {
@@ -322,6 +410,12 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   main .section1 .sct1-container #illustration {
     height: 521px;
   }
+  footer .footer-box2 {
+    gap: 18%;
+  }
+  footer .footer-box2 .social-links {
+    gap: 15px;
+  }
 }
 
 @media (max-width: 920px) {
@@ -360,10 +454,12 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
     font-size: 17px;
   }
+  main .section3 .sct3-container button,
   main .section1 .sct1-container .sct1-text button {
     padding: 15px 20px;
     margin: 40px 0;
   }
+  main .section3 .sct3-container button a,
   main .section1 .sct1-container .sct1-text button a {
     font-size: 15px;
   }
@@ -409,6 +505,15 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   }
   main .section2 .sct2-container .sct2-text {
     padding: 70px 30px 20px 80px;
+  }
+  main .section3 {
+    height: 110vh;
+  }
+  main .section3 p {
+    font-size: 50px;
+  }
+  footer .footer-box2 {
+    gap: 12%;
   }
 }
 @media (max-width: 832px) {
@@ -515,6 +620,33 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   main .section2 {
     margin-top: -50px;
   }
+  main .section3 {
+    height: 90vh;
+  }
+  main .section3 p {
+    font-size: 40px;
+  }
+  main .section3 img:nth-of-type(1) {
+    width: 80px;
+    height: 85px;
+  }
+  footer .footer-box2 {
+    flex-direction: column-reverse;
+    gap: 20px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  footer .footer-box2 .social-links {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  footer .footer-box1 .footer-links a {
+    font-size: 12px;
+  }
+  footer .footer-box1 img {
+    width: 80%;
+  }
 }
 @media (max-width: 576px) {
   header .landing-page .text p:nth-of-type(1) {
@@ -553,6 +685,16 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   }
   main .section2 .sct2-container .sct2-text #description {
     font-size: 16px;
+  }
+  main .section3 p {
+    font-size: 30px;
+  }
+  main .section3 {
+    height: 70vh;
+  }
+  main .section3 img:nth-of-type(1) {
+    width: 60px;
+    height: 65px;
   }
 }
 @media (max-width: 420px) {
@@ -601,9 +743,11 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
     font-size: 15px;
   }
+  main .section3 .sct3-container button a,
   main .section1 .sct1-container .sct1-text button a {
     font-size: 12px;
   }
+  main .section3 .sct3-container button,
   main .section1 .sct1-container .sct1-text button {
     padding: 10px 15px;
     margin: 30px 0;
@@ -617,6 +761,28 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   }
   main .section2 {
     margin-top: 100px;
+  }
+  main .section3 p {
+    font-size: 25px;
+  }
+  main .section3 {
+    height: 60vh;
+  }
+  main .section3 img:nth-of-type(1) {
+    width: 50px;
+    height: 55px;
+  }
+  footer .footer-box1 .footer-links a {
+    font-size: 10px;
+  }
+  footer .footer-box1 .footer-links {
+    gap: 20px;
+  }
+  footer .footer-box1 img {
+    width: 60%;
+  }
+  footer .footer-box2 {
+    font-size: 10px;
   }
 }
 @media (max-width: 350px) {
@@ -650,5 +816,24 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
   }
   main .section2 {
     margin-top: 50px;
+  }
+  main .section3 p {
+    font-size: 20px;
+  }
+  main .section3 {
+    height: 50vh;
+  }
+  main .section3 img:nth-of-type(1) {
+    width: 40px;
+    height: 45px;
+  }
+  footer .footer-box1 .footer-links a {
+    font-size: 8px;
+  }
+  footer .footer-box1 .footer-links {
+    gap: 10px;
+  }
+  footer .footer-box2 p {
+    font-size: 8px;
   }
 }
