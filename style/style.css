@@ -97,6 +97,67 @@ header .landing-page img:nth-of-type(1) {
   z-index: 1;
   max-width: 100%;
 }
+/*------------------FIN-HEADER--------------------------------------------*/
+main {
+  background-color: #5b0017;
+  font-family: "Source Serif 4", serif;
+}
+main .section1 {
+  padding: 7% 5%;
+  background-image: url(/images/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: right;
+  height: 90vh;
+}
+main .section1 .sct1-container {
+  display: flex;
+  gap: 30px;
+}
+main .section1 .sct1-container #illustration {
+  width: 30%;
+  height: 621px;
+}
+main .section1 .sct1-container .sct1-text {
+  width: 70%;
+  position: relative;
+}
+main .section1 .sct1-container .sct1-text p:nth-of-type(1) {
+  font-size: 70px;
+  font-weight: 400;
+  color: white;
+}
+main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
+  color: white;
+  font-weight: 200;
+  font-size: 25px;
+  margin: 10px 0 20px 0;
+}
+main .section1 .sct1-container .sct1-text button {
+  padding: 15px 20px;
+  background-color: #cc9d2f;
+  margin: 50px 0;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: #5b0017 -4px 4px 0 0, #cc9d2f -4px 4px 0 1px;
+}
+main .section1 .sct1-container .sct1-text button a {
+  text-decoration: none;
+  color: #5b0017;
+  font-weight: 200;
+}
+main .section1 .sct1-container .sct1-text .sct1-imgs {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/*------------------FIN-SECTION1-------------------------------------------------*/
 @media (max-width: 1290px) {
   header {
     background-size: 45% 700px;
@@ -113,6 +174,24 @@ header .landing-page img:nth-of-type(1) {
   }
   header .landing-page img {
     width: 60%;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(1) {
+    font-size: 60px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
+    font-size: 20px;
+    margin: 10px 0 20px 0;
+  }
+  main .section1 .sct1-container .sct1-text button {
+    padding: 15px 20px;
+    margin: 40px 0;
+    font-size: 18px;
+  }
+  main .section1 .sct1-container .sct1-text button a {
+    font-size: 18px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1245px) {
@@ -156,7 +235,33 @@ header .landing-page img:nth-of-type(1) {
   header .landing-page .text button {
     font-size: 16px;
   }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(1) {
+    font-size: 40px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
+    font-size: 18px;
+    margin: 10px 0 20px 0;
+  }
+  main .section1 .sct1-container .sct1-text button {
+    padding: 15px 20px;
+    margin: 40px 0;
+    font-size: 18px;
+  }
+  main .section1 .sct1-container .sct1-text button a {
+    font-size: 16px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs img {
+    width: 120px;
+  }
+  main .section1 .sct1-container #illustration {
+    height: 521px;
+  }
 }
+
 @media (max-width: 920px) {
   header {
     background-size: 45% 450px;
@@ -187,6 +292,41 @@ header .landing-page img:nth-of-type(1) {
   header .landing-page .text p:nth-of-type(2) {
     font-size: 15px;
   }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(1) {
+    font-size: 35px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
+    font-size: 17px;
+  }
+  main .section1 .sct1-container .sct1-text button {
+    padding: 15px 20px;
+    margin: 40px 0;
+  }
+  main .section1 .sct1-container .sct1-text button a {
+    font-size: 15px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs {
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs img {
+    width: 100px;
+  }
+  main .section1 .sct1-container #illustration {
+    height: 521px;
+  }
+  main .section1 {
+    height: 70vh;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(1) {
+    width: 55%;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
+    width: 10%;
+  }
+  main .section1 .sct1-container #illustration {
+    width: 35%;
+  }
 }
 @media (max-width: 832px) {
   header .landing-page .text p:nth-of-type(1) {
@@ -209,6 +349,9 @@ header .landing-page img:nth-of-type(1) {
   }
   header .landing-page .text button {
     font-size: 14px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(1) {
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -249,6 +392,32 @@ header .landing-page img:nth-of-type(1) {
   header .landing-page .text {
     max-width: 100%;
   }
+  main .section1 .sct1-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  main .section1 {
+    padding: 7% 5%;
+    background-image: url(/images/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 160vh;
+  }
+  main .section1 .sct1-container #illustration {
+    width: 50%;
+    margin: auto;
+  }
+  main .section1 .sct1-container .sct1-text {
+    width: 100%;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs {
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
+    left: 45%;
+    bottom: -25px;
+  }
 }
 @media (max-width: 576px) {
   header .landing-page .text p:nth-of-type(1) {
@@ -273,6 +442,16 @@ header .landing-page img:nth-of-type(1) {
   }
   header nav .nav-bt img {
     height: 40px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
+    left: 45%;
+    bottom: -20px;
+  }
+  main .section1 .sct1-container #illustration {
+    width: 60%;
+  }
+  main .section1 {
+    height: 150vh;
   }
 }
 @media (max-width: 420px) {
@@ -304,6 +483,37 @@ header .landing-page img:nth-of-type(1) {
   header .landing-page .text button {
     padding: 5px 20px;
   }
+  main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
+    left: 45%;
+    bottom: -10px;
+  }
+  main .section1 .sct1-container #illustration {
+    width: 70%;
+    height: 450px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs img {
+    width: 80px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(1) {
+    font-size: 30px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
+    font-size: 15px;
+  }
+  main .section1 .sct1-container .sct1-text button a {
+    font-size: 12px;
+  }
+  main .section1 .sct1-container .sct1-text button {
+    padding: 10px 15px;
+    margin: 30px 0;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  main .section1 {
+    height: 120vh;
+  }
 }
 @media (max-width: 350px) {
   header .landing-page .text p:nth-of-type(1) {
@@ -314,5 +524,24 @@ header .landing-page img:nth-of-type(1) {
   header nav .nav-links {
     gap: 5px;
     padding-top: 10px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
+    bottom: -7px;
+  }
+  main .section1 .sct1-container #illustration {
+    width: 80%;
+    height: 400px;
+  }
+  main .section1 .sct1-container .sct1-text .sct1-imgs img {
+    width: 60px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(1) {
+    font-size: 25px;
+  }
+  main .section1 .sct1-container .sct1-text p:nth-of-type(2) {
+    font-size: 12px;
+  }
+  main .section1 {
+    height: 120vh;
   }
 }
