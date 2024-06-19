@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  padding: 1% 5%;
+  background-color: #5b0017;
+  font-family: "Source Serif 4", serif;
+  background-image: url(/images/Rectangle.png);
+  background-repeat: no-repeat;
+  background-size: 45% 800px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .nav-links {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top: 30px;
+}
+header nav .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+}
+header nav .nav-bt {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-bt button {
+  padding: 10px 20px;
+  background-color: #cc9d2f;
+  color: #5b0017;
+  font-size: 20px;
+  height: 50px;
+  transform: translateY(-30px);
+  cursor: pointer;
+  border-color: transparent;
+}
+button:hover,
+a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+header nav .nav-bt img {
+  height: 60px;
+  transform: translateY(-30px);
+}
+header .landing-page {
+  display: flex;
+}
+header .landing-page img,
+header .landing-page .text {
+  max-width: 40%;
+}
+header .landing-page img {
+  max-width: 60%;
+}
+header .landing-page .text p:nth-of-type(1) {
+  color: #ffffff;
+  font-size: 100px;
+  position: absolute;
+  z-index: 2;
+  width: 60%;
+  transform: translateY(50px);
+  background-color: #5b0017;
+  opacity: 0.7;
+}
+header .landing-page .text p:nth-of-type(2),
+header .landing-page .text button {
+  transform: translateY(350px);
+}
+header .landing-page .text p:nth-of-type(2) {
+  max-width: 70%;
+  color: white;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+header .landing-page .text button {
+  padding: 10px 25px;
+  border: solid 3px #cc9d2f;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .landing-page .text button a {
+  font-size: 18px;
+  font-weight: 200;
+  color: #cc9d2f;
+  text-decoration: none;
+}
+header .landing-page img:nth-of-type(1) {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+@media (max-width: 1290px) {
+  header {
+    background-size: 45% 700px;
+  }
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 80px;
+  }
+  header .landing-page .text p:nth-of-type(2),
+  header .landing-page .text button {
+    transform: translateY(300px);
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    max-width: 80%;
+  }
+  header .landing-page img {
+    width: 60%;
+  }
+}
+@media (max-width: 1245px) {
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 60px;
+  }
+  header .landing-page .text p:nth-of-type(2),
+  header .landing-page .text button {
+    transform: translateY(220px);
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    font-size: 18px;
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    max-width: 80%;
+  }
+  header .landing-page img {
+    width: 55%;
+  }
+  header nav .nav-bt button {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1234px) {
+  header {
+    background-size: 45% 550px;
+  }
+  header .vector {
+    width: 8%;
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    max-width: 90%;
+  }
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 50px;
+  }
+  header .landing-page .text p:nth-of-type(2),
+  header .landing-page .text button {
+    transform: translateY(200px);
+  }
+  header .landing-page .text button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 920px) {
+  header {
+    background-size: 45% 450px;
+  }
+  header nav .nav-bt button {
+    font-size: 16px;
+    transform: translateY(0px);
+  }
+  header nav .nav-bt img {
+    transform: translateY(0px);
+  }
+  header .landing-page .text button {
+    font-size: 15px;
+  }
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 45px;
+  }
+  header .landing-page .text p:nth-of-type(2),
+  header .landing-page .text button {
+    transform: translateY(180px);
+  }
+  header nav .logo {
+    width: 8%;
+  }
+  header .vector {
+    width: 6%;
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    font-size: 15px;
+  }
+}
+@media (max-width: 832px) {
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 40px;
+  }
+  header .landing-page .text p:nth-of-type(2),
+  header .landing-page .text button {
+    transform: translateY(165px);
+  }
+  header nav .nav-bt button {
+    font-size: 14px;
+    padding: 5px 20px;
+    height: 40px;
+  }
+  header nav .nav-bt img {
+    height: 50px;
+  }
+  header nav .nav-links a {
+    font-size: 15px;
+  }
+  header .landing-page .text button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  header .landing-page {
+    flex-direction: column-reverse;
+  }
+  header .landing-page .text p:nth-of-type(1) {
+    color: #ffffff;
+    font-size: 60px;
+    position: absolute;
+    width: 70%;
+    right: 100px;
+    bottom: 50%;
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 25px;
+  }
+  header .landing-page img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+  header .landing-page .text p:nth-of-type(2),
+  header .landing-page .text button {
+    transform: translateY(0px);
+  }
+  header .landing-page .text button {
+    margin-bottom: 20px;
+  }
+  header {
+    background-size: 100%;
+    text-align: center;
+  }
+  header .landing-page .text {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 40px;
+    right: 80px;
+    bottom: 60%;
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    width: 90%;
+    font-size: 18px;
+  }
+  header nav .nav-links a {
+    font-size: 12px;
+  }
+  header nav .nav-links {
+    gap: 20px;
+    padding-top: 20px;
+  }
+  header nav .nav-bt button {
+    font-size: 12px;
+    height: 30px;
+  }
+  header nav .nav-bt img {
+    height: 40px;
+  }
+}
+@media (max-width: 420px) {
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 30px;
+    right: 60px;
+    bottom: 70%;
+  }
+  header .landing-page .text p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  header nav .nav-links a {
+    font-size: 10px;
+  }
+  header nav .nav-links {
+    gap: 10px;
+    padding-top: 15px;
+  }
+  header nav .nav-bt button {
+    font-size: 10px;
+    height: 20px;
+  }
+  header nav .nav-bt img {
+    height: 30px;
+  }
+  header .landing-page .text button a {
+    font-size: 12px;
+  }
+  header .landing-page .text button {
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 350px) {
+  header .landing-page .text p:nth-of-type(1) {
+    font-size: 25px;
+    right: 50px;
+    bottom: 75%;
+  }
+  header nav .nav-links {
+    gap: 5px;
+    padding-top: 10px;
+  }
+}
