@@ -158,6 +158,59 @@ main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
   bottom: 0;
 }
 /*------------------FIN-SECTION1-------------------------------------------------*/
+main .section2 {
+  padding: 1% 5%;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  color: #243054;
+  font-family: "Inter", sans-serif;
+}
+main .section2 .sct2-container {
+  display: flex;
+}
+main .section2 .sct2-container .sct2-text {
+  width: 30%;
+  background-color: #cc9d2f;
+  padding: 70px 100px 20px 100px;
+}
+main .section2 .sct2-container .video {
+  width: 70%;
+}
+main .section2 .sct2-container .video img {
+  width: 100%;
+  height: 100%;
+}
+main .section2 .sct2-container .sct2-text i {
+  transform: translateX(-15px);
+}
+main .section2 .sct2-container .sct2-text #description {
+  font-size: 21px;
+  line-height: 1.8;
+}
+main .section2 .sct2-container .sct2-text .user-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+main .section2 .sct2-container .sct2-text .user-box #user-image {
+  height: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1.66px solid #243054;
+}
+main .section2 .sct2-container .sct2-text .user-box .username {
+  width: 90%;
+  border-bottom: 0.8px #00646d62 solid;
+}
+main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(1) {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-size: 12px;
+}
+/*------------------FIN-SECTION2-------------------------------------------------*/
 @media (max-width: 1290px) {
   header {
     background-size: 45% 700px;
@@ -192,6 +245,15 @@ main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
   }
   main .section1 .sct1-container .sct1-text .sct1-imgs {
     margin-bottom: 20px;
+  }
+  main .section2 .sct2-container .sct2-text {
+    padding: 70px 80px 20px 100px;
+  }
+  main .section2 .sct2-container .sct2-text .user-box {
+    margin-top: 60px;
+  }
+  main .section2 .sct2-container .sct2-text #description {
+    font-size: 18px;
   }
 }
 @media (max-width: 1245px) {
@@ -327,6 +389,27 @@ main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
   main .section1 .sct1-container #illustration {
     width: 35%;
   }
+  main
+    .section2
+    .sct2-container
+    .sct2-text
+    .user-box
+    .username
+    p:nth-of-type(1) {
+    font-size: 12px;
+  }
+  main
+    .section2
+    .sct2-container
+    .sct2-text
+    .user-box
+    .username
+    p:nth-of-type(2) {
+    margin-bottom: 9px;
+  }
+  main .section2 .sct2-container .sct2-text {
+    padding: 70px 30px 20px 80px;
+  }
 }
 @media (max-width: 832px) {
   header .landing-page .text p:nth-of-type(1) {
@@ -418,6 +501,20 @@ main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
     left: 45%;
     bottom: -25px;
   }
+  main .section2 .sct2-container {
+    flex-direction: column;
+  }
+  main .section2 .sct2-container .sct2-text {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 50px 20px 50px;
+  }
+  main .section2 .sct2-container .video {
+    width: 100%;
+  }
+  main .section2 {
+    margin-top: -50px;
+  }
 }
 @media (max-width: 576px) {
   header .landing-page .text p:nth-of-type(1) {
@@ -448,10 +545,14 @@ main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
     bottom: -20px;
   }
   main .section1 .sct1-container #illustration {
-    width: 60%;
+    width: 80%;
+    height: 400px;
   }
   main .section1 {
     height: 150vh;
+  }
+  main .section2 .sct2-container .sct2-text #description {
+    font-size: 16px;
   }
 }
 @media (max-width: 420px) {
@@ -514,6 +615,9 @@ main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
   main .section1 {
     height: 120vh;
   }
+  main .section2 {
+    margin-top: 100px;
+  }
 }
 @media (max-width: 350px) {
   header .landing-page .text p:nth-of-type(1) {
@@ -543,5 +647,8 @@ main .section1 .sct1-container .sct1-text .sct1-footer img:nth-of-type(2) {
   }
   main .section1 {
     height: 120vh;
+  }
+  main .section2 {
+    margin-top: 50px;
   }
 }
