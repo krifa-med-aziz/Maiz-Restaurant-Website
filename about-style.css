@@ -282,8 +282,8 @@ footer .footer-box2 .social-links i:hover {
   header nav .nav-bt {
     padding-top: 20px;
   }
-  header nav .logo {
-    width: 10%;
+  header nav a .logo {
+    width: 70%;
   }
   header nav .nav-links a {
     font-size: 15px;
@@ -377,16 +377,19 @@ footer .footer-box2 .social-links i:hover {
   header nav .nav-bt {
     padding-top: 30px;
   }
-  header nav .logo {
-    width: 9%;
+  header nav a .logo {
+    width: 50%;
+  }
+  header nav .nav-links {
+    transform: translateX(-20px);
   }
   header nav .nav-links a {
     font-size: 12px;
   }
   header nav .nav-bt button {
-    font-size: 12px;
+    font-size: 10px;
     height: 30px;
-    padding: 5px 20px;
+    padding: 5px 10px;
   }
   header nav .nav-bt img {
     height: 40px;
@@ -417,8 +420,9 @@ footer .footer-box2 .social-links i:hover {
   header nav .nav-bt {
     padding-top: 40px;
   }
-  header nav .logo {
-    width: 9%;
+  header nav a .logo {
+    width: 40%;
+    transform: translateY(10px);
   }
   header nav .nav-links {
     gap: 10px;
@@ -427,9 +431,9 @@ footer .footer-box2 .social-links i:hover {
     font-size: 10px;
   }
   header nav .nav-bt button {
-    font-size: 12px;
+    font-size: 8px;
     height: 25px;
-    padding: 5px 10px;
+    padding: 0px 10px;
   }
   header nav .nav-bt img {
     height: 30px;
