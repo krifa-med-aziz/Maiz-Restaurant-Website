@@ -6,7 +6,7 @@ header {
   padding: 1% 5%;
   background-color: #5b0017;
   font-family: "Source Serif 4", serif;
-  background-image: url(images/Rectangle.png);
+  background-image: url(/images/Rectangle.png);
   background-repeat: no-repeat;
   background-size: 45% 800px;
 }
@@ -104,7 +104,7 @@ main {
 }
 main .section1 {
   padding: 7% 5%;
-  background-image: url(images/Rectangle.png);
+  background-image: url(/images/Rectangle.png);
   background-repeat: no-repeat;
   background-size: 50% 100%;
   background-position: right;
@@ -215,7 +215,7 @@ main .section2 .sct2-container .sct2-text .user-box .username p:nth-of-type(2) {
 /*------------------FIN-SECTION2-------------------------------------------------*/
 main .section3 {
   height: 120vh;
-  background-image: url(images/section3-illustration.png);
+  background-image: url(/images/section3-illustration.png);
   background-size: 100% 100%;
   position: relative;
   font-family: "Inter", sans-serif;
@@ -592,7 +592,7 @@ footer .footer-box2 .social-links i:hover {
   }
   main .section1 {
     padding: 7% 5%;
-    background-image: url(images/Rectangle.png);
+    background-image: url(/images/Rectangle.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 160vh;
