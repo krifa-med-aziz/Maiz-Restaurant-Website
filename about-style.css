@@ -8,7 +8,7 @@ header {
   font-family: "Source Serif 4", serif;
 }
 header .header {
-  background-image: url(/images/about/Rectangle.png);
+  background-image: url(images/about/Rectangle.png);
   background-repeat: no-repeat;
   background-size: 50% 883px;
 }

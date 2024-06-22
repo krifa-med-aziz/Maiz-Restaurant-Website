@@ -8,7 +8,7 @@ header {
   font-family: "Source Serif 4", serif;
 }
 header .header {
-  background-image: url(/images/about/Rectangle.png);
+  background-image: url(images/about/Rectangle.png);
   background-repeat: no-repeat;
   background-size: 50% 883px;
 }
@@ -155,7 +155,6 @@ main .top-footer .section1 {
 main .top-footer .section1 .sct1-text {
   width: 30%;
   background-color: #243054;
-
   padding: 5%;
 }
 main .top-footer .section1 .map {
