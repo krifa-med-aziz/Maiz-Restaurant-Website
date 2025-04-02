@@ -466,3 +466,38 @@ footer .footer-box2 .social-links i:hover {
     font-size: 8px;
   }
 }
+
+.ScrollUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  border: solid 1px white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 150;
+  font-size: 20px;
+  color: white;
+  transition: ease 0.3s, transform 0.3s ease, opacity ease 0.3s;
+}
+.ScrollUp:hover {
+  background-color: var(--color-primary-darker);
+}
+.ScrollUp.hide {
+  transform: translateY(80px);
+  opacity: 0;
+}
+.ScrollUp.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
