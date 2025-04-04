@@ -45,7 +45,7 @@
             ><a class="venuelink" href="#">Venue</a><a href="#">Events</a>
           </div>
           <div class="nav-bt">
-            <button>Book Now</button>
+            <button class="btn__Book">Book Now</button>
             <img src="images/bt-decoration.png" alt="logo" />
           </div>
         </nav>
@@ -63,10 +63,18 @@
             </p>
           </div>
           <div class="links">
-            <a href="#">All</a><a href="#">Feast</a><a href="#">Coffee</a
-            ><a href="#">Cocktails</a><a href="#">dessert</a>
+            <button class="all__btn btn-link active">All</button>
+            <button class="feast__btn btn-link">Feast</button>
+            <button class="coffee__btn btn-link">Coffee</button>
+            <button class="cocktails__btn btn-link">Cocktails</button>
+            <button class="dessert__btn btn-link">Dessert</button>
           </div>
           <div class="menu">
+            <!-- <div class="spinner">
+              <svg>
+                <use href="./images/icons.svg#icon-loader"></use>
+              </svg>
+            </div> -->
             <div class="food-box">
               <div class="image-container">
                 <img src="images/Menu/Bukhari.png" alt="Bukhari" />
@@ -77,7 +85,7 @@
             </div>
             <div class="food-box">
               <div class="image-container">
-                <img src="images/Menu/Saudi Makboos.png" alt="Saudi Makboos" />
+                <img src="images/Menu/SaudiMakboos.png" alt="Saudi Makboos" />
               </div>
               <div class="food-name">
                 <p>Saudi Makboos</p>
@@ -109,7 +117,7 @@
             </div>
             <div class="food-box">
               <div class="image-container">
-                <img src="images/Menu/Math Lootha.png" alt="Math Lootha" />
+                <img src="images/Menu/MathLootha.png" alt="Math Lootha" />
               </div>
               <div class="food-name">
                 <p>Math Lootha</p>
@@ -139,9 +147,46 @@
                 <p>Saleeg</p>
               </div>
             </div>
-          </div>
-          <div class="bt">
-            <button><a href="#">Show more</a></button>
+            <div class="food-box">
+              <div class="image-container">
+                <img src="images/Menu/ghahwa.png" alt="ghahwa" />
+              </div>
+              <div class="food-name">
+                <p>Ghahwa</p>
+              </div>
+            </div>
+            <div class="food-box">
+              <div class="image-container">
+                <img src="images/Menu/DallahCoffee.jpg" alt="Dallah Coffee" />
+              </div>
+              <div class="food-name">
+                <p>Dallah Coffee</p>
+              </div>
+            </div>
+            <div class="food-box">
+              <div class="image-container">
+                <img src="images/Menu/Sobya.jpg" alt="Sobya" />
+              </div>
+              <div class="food-name">
+                <p>Sobya</p>
+              </div>
+            </div>
+            <div class="food-box">
+              <div class="image-container">
+                <img src="images/Menu/Laban.jpg" alt="Laban" />
+              </div>
+              <div class="food-name">
+                <p>Laban</p>
+              </div>
+            </div>
+            <div class="food-box">
+              <div class="image-container">
+                <img src="images/Menu/Maamoul.jpg" alt="Maamoul" />
+              </div>
+              <div class="food-name">
+                <p>Maamoul</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -206,5 +251,22 @@
         <button><i class="fa-solid fa-arrow-up ScrollUp"></i></button>
       </div>
     </footer>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <button class="btn--close-modal form__btn">&times;</button>
+      <form class="modal__form">
+        <label class="form__label">Name*</label>
+        <input type="text" class="form__input" required />
+        <label class="form__label">Phone Number*</label>
+        <input type="tel" class="form__input" required maxlength="8" />
+        <label class="form__label">Date*</label>
+        <input type="date" class="form__input" />
+        <label class="form__label">Number of Guests*</label>
+        <input type="number" class="form__input" min="0" />
+        <label class="form__label">Special Requests</label>
+        <textarea class="form__input"></textarea>
+      </form>
+      <button type="submit" class="btn">Book Now</button>
+    </div>
   </body>
 </html>

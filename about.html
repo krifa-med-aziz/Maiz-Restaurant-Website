@@ -44,8 +44,8 @@
             <a href="about.html">About</a><a href="menu.html">Menu</a
             ><a class="venuelink" href="#">Venue</a><a href="#">Events</a>
           </div>
-          <div class="nav-bt">
-            <button>Book Now</button>
+          <div class="nav-bt btn__Book">
+            <button class="btn__Book">Book Now</button>
             <img src="images/about/bt-decoration-yellow.png" alt="logo" />
           </div>
         </nav>
@@ -169,5 +169,22 @@
         <button><i class="fa-solid fa-arrow-up ScrollUp"></i></button>
       </div>
     </footer>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <button class="btn--close-modal form__btn">&times;</button>
+      <form class="modal__form">
+        <label class="form__label">Name*</label>
+        <input type="text" class="form__input" required />
+        <label class="form__label">Phone Number*</label>
+        <input type="tel" class="form__input" required maxlength="8" />
+        <label class="form__label">Date*</label>
+        <input type="date" class="form__input" />
+        <label class="form__label">Number of Guests*</label>
+        <input type="number" class="form__input" min="0" />
+        <label class="form__label">Special Requests</label>
+        <textarea class="form__input"></textarea>
+      </form>
+      <button type="submit" class="btn">Book Now</button>
+    </div>
   </body>
 </html>

@@ -30,8 +30,7 @@ allSection.forEach((section) => {
 });
 ///////////////
 const scrollUp = document.querySelector(".ScrollUp");
-// const nav = document.querySelector(".nav");
-const nav = document.querySelector(".landing-page");
+const nav = document.querySelector(".nav");
 const stikyNav = (entries) => {
   const [entry] = entries;
   if (!entry.isIntersecting) {
@@ -52,3 +51,33 @@ scrollUp.addEventListener("click", (e) => {
   document.querySelector(".nav").scrollIntoView({ behavior: "smooth" });
 });
 navObserver.observe(nav);
+///////////////// Overlay
+const overlay = document.querySelector(".overlay");
+const btnBook = document.querySelector(".btn__Book");
+const modal = document.querySelector(".modal");
+const btnCloseModal = document.querySelector(".btn--close-modal");
+const openModal = (modal) => {
+  overlay.classList.remove("hidden");
+  modal.classList.remove("hidden");
+};
+const closeModal = (modal) => {
+  overlay.classList.add("hidden");
+  modal.classList.add("hidden");
+};
+btnCloseModal.addEventListener("click", function (e) {
+  e.preventDefault();
+  closeModal(modal);
+});
+
+btnBook.addEventListener("click", function (e) {
+  e.preventDefault();
+  openModal(modal);
+});
+overlay.addEventListener("click", function (e) {
+  e.preventDefault();
+  closeModal(modal);
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modal.classList.contains("hidden"))
+    closeModal(modal);
+});
